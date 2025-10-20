@@ -65,3 +65,12 @@ function displayProducts(products) {
     container.appendChild(card);
   });
 }
+
+// Step 6: Reusable error handler
+function handleError(error) {
+  console.log("An error occurred:", error.message);
+}
+
+// Step 7: Call both functions
+fetchProductsThen();
+fetchProductsAsync();
